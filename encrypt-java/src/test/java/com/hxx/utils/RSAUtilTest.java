@@ -1,12 +1,13 @@
 package com.hxx.utils;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 
 /**
  * <ul>
  * <li>功能说明：</li>
  * <li>作者：tal on 2019/4/26 0026 17:51 </li>
- * <li>邮箱：houxiangxiang@cibfintech.com</li>
+ * <li>邮箱：hou_xiangxiang@126.com</li>
  * </ul>
  */
 public class RSAUtilTest {
@@ -15,8 +16,8 @@ public class RSAUtilTest {
 
     public static void main(String[] args) throws Exception {
 //        genRSAKeyTest();
-        encryptTest();
-//        decryptTest();
+//        encryptTest();
+        decryptTest();
     }
 
     private static void encryptTest() throws Exception {
@@ -30,10 +31,13 @@ public class RSAUtilTest {
 
     private static void decryptTest() throws Exception {
         String ciphertext = "nA5K+5LSGS242KMhJZ+DGKQv3DpYigL88q+THLcy0872D+1BSv8JRMIrUCbKoVPMXfqFK8E1mhMzEZKiZudR+TJkgdWIxxhaE00SNuCpXQptntgu0Ej59k6fQlFELKj4SAnBc7mYeLcOBa1CXZYPzHLu1ms5W4ek3gjN5BkBz2tSTjOViwFIQmQoP3W3ltfbpIC7KPU0ppMjUVB/khIXZhqLk7b4pDXbxUTEIMjqZFlvJ/BVKBEdVMFIj0qVbFsJmdAA4sFt3xIFcbL4WoOUcKBOA7VeGguXUfyGYpU7GXXilUdLOFlJGYygXdGyTcrDUWP/S+iaaBRvAY0XNSHWsg==";
+        Date dateStart = new Date();
         String plainText = RSAUtil.decrypt(PRIVATE_KEY, ciphertext);
+        Date dateEnd = new Date();
         System.out.println("------------------------>");
         System.out.println("ciphertext --> " + ciphertext);
         System.out.println("plainText --> " + plainText);
+        System.out.println("用时：" + (dateEnd.getTime() - dateStart.getTime()) + "ms");
         System.out.println("<------------------------");
     }
 

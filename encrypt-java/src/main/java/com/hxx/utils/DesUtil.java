@@ -14,7 +14,7 @@ import javax.crypto.spec.DESKeySpec;
  * <ul>
  * <li>功能说明：</li>
  * <li>作者：tal on 2019/5/27 0027 14:18 </li>
- * <li>邮箱：houxiangxiang@cibfintech.com</li>
+ * <li>邮箱：hou_xiangxiang@126.com</li>
  * </ul>
  */
 public class DesUtil {

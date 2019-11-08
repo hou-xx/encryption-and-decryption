@@ -11,7 +11,7 @@ import java.util.Base64;
  * <ul>
  * <li>功能说明：</li>
  * <li>作者：tal on 2019/4/26 0026 17:32 </li>
- * <li>邮箱：houxiangxiang@cibfintech.com</li>
+ * <li>邮箱：hou_xiangxiang@126.com</li>
  * </ul>
  */
 public class RSAKeyGenUtil {
