@@ -6,7 +6,7 @@ import cn.hutool.crypto.digest.SM3;
 
 /**
  * <ul>
- * <li>功能说明：国密算法加解密示例</li>
+ * <li>功能说明：国密算法加解密示例（用于java后端加解密）</li>
  * <li>作者：Tal on 2021\4\24 0024 23:53 </li>
  * </ul>
  */
